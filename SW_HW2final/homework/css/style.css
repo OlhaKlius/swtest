@@ -1,0 +1,155 @@
+/* 
+
+write your code here
+
+*/
+
+h2+p {
+    font-style: italic;
+    color: grey;
+}
+
+p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+.box h2:hover {  
+    background-color: #87CEFA;
+    font-weight: bold;
+    color: white;
+}
+
+.box-work {
+    padding: 10px;
+}
+
+.box-work:nth-child(even) {
+    background: #EEEDED;
+}
+
+.box-work>div>h2+p::first-letter{
+    color:black;
+}
+
+.btn {
+    float: right;
+    padding: 0.9rem 3.2rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: lightblue;
+    border-color: lightblue;
+    border: 2px solid;
+    border-radius: 0rem;
+}
+
+.btn:hover {
+    background-color: rgb(151, 211, 248);
+    color: rgb(227, 240, 245);
+    border-color: rgb(125, 206, 233);
+}
+
+.carousel-content h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.flex-2-col {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-2-col::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid #87cffa;
+    border-right: 250px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.flex-item {
+    flex: 0 1 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.heading ol li a {
+    color: black;
+}
+
+.heading ol li a:hover {
+    color: #87cefa;
+    text-decoration: underline double;
+}
+
+.heading ol li a:visited {
+    text-decoration: underline;
+}
+
+.mandatory-field:after {
+    content: " *";
+    color: red;
+}
+
+.text::after {
+    content: "New";
+    color: red;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.tm-banner {
+    background-color:#EEEDED;
+}
+
+.tm-banner-inner {
+    border-color: lightgray;
+    background-color: white;
+}
+
+.tm-main-nav,
+.tm-content-box {
+    box-shadow: 0 0 10px gray;
+}
+
+.tm-main-nav a:hover {
+    background-color: #EEEDED;
+}
+
+.tm-section-description {
+    text-indent: 20px;
+    line-height: 2em;
+}
+
+@media print {
+    .tm-sidebar,
+    #about,
+    .heading,
+    .blocks,
+    #ideas,
+    .flex-2-col::before,
+    section.tm-content-box {
+        display: none;
+    }
+}
+
+@media print {
+   .padding-medium h2 {
+    color: blue;
+   }
+   .padding-medium {
+    width: 400px;
+    padding: 0px 100px 0px 40px;
+   }
+   .flex-item img {
+    width: 220px;
+    height: 220px;
+    margin: 0px 50px 0px -50px;
+   }
+}   
